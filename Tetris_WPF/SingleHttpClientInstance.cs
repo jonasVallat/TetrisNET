@@ -13,8 +13,10 @@ namespace WpfApp1
 {
     class SingleHttpClientInstance
     {
-
+        // Change the URI for your server
         private const string URI = "https://localhost:44395/";
+        
+        
         private static readonly HttpClient httpClient;
 
         static SingleHttpClientInstance()
@@ -22,7 +24,6 @@ namespace WpfApp1
             httpClient = new HttpClient();
         }
 
-        // This method uses the shared instance of HttpClient for every call to GetProductAsync.
         static public Tuple<bool, string> Login(string email, string passwod)
         {
 
