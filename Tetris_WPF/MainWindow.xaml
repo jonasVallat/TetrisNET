@@ -49,12 +49,28 @@
 		<Label x:Name="nextPieceText" Content="NEXT PIECE  :" Foreground="Yellow" Background="Black" FontFamily="Times New Roman Bold" FontSize="20" Margin="234,117,127,264"/>
 		<Canvas x:Name="nextPieceCanvas" Margin="398,117,37,221" />
 		<Button x:Name="startButton" Content="START" Foreground="Black" Background="Gray" FontSize="40" FontFamily="Times New Roman Bold" Click="buttonClick" Margin="291,325,78,30"/>
-		<Label x:Name="gameOverText" Content="GAME&#10;OVER" Foreground="Red" FontFamily="Times New Roman Bold" HorizontalAlignment="Center" FontSize="120" Visibility="Visible" Margin="0,47,0,95" />
-	</Grid>
+        <Border x:Name="gameOverPanel" Padding="10" Background="White" Visibility="Hidden">
+            <StackPanel  Background="White" >
+                <Label x:Name="gameOverText" Content="GAME OVER" Foreground="Red" FontFamily="Times New Roman Bold" HorizontalAlignment="Center" FontSize="50" Visibility="Visible" />
+                <Label Content="Score :" FontFamily="Times New Roman Bold" FontSize="40" Visibility="Visible" />
+                <StackPanel x:Name="gameOverScore" Margin="40 0">
+                    <TextBlock FontSize="25" Margin="5">700 points</TextBlock>
+                    <TextBlock FontSize="25" Margin="5">700 points</TextBlock>
+                    <TextBlock FontSize="25" Margin="5">700 points</TextBlock>
+                    <TextBlock FontSize="25" Margin="5">700 points</TextBlock>
+                    <TextBlock FontSize="25" Margin="5">700 points</TextBlock>
+                </StackPanel>
+                <Button x:Name="restart" Content="Restart" Foreground="Black" Background="Gray" FontSize="40" FontFamily="Times New Roman Bold" Click="buttonClick" />
+            </StackPanel>
+        </Border>
+
+
+    </Grid>
 
 
 
-	<Window.Background>
+
+    <Window.Background>
 		<LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
 			<GradientStop Color="Blue" Offset="0"/>
 			<GradientStop Color="Red" Offset="1.0"/>

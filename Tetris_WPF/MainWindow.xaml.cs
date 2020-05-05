@@ -3,6 +3,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using WpfApp1;
 
 namespace Tetris
 { 
@@ -148,6 +150,7 @@ namespace Tetris
                 nextPieceCanvas.Children.Clear();
                 isGameOver = false;
                 gameOverText.Visibility = Visibility.Hidden;
+                gameOverPanel.Visibility = Visibility.Hidden;
             }
             if (!timer.IsEnabled)   //restart timer/reset score
             {
@@ -534,7 +537,26 @@ namespace Tetris
         }
         private void gameOver()
         {
+            SingleHttpClientInstance.AddScore(score);
+
+
+            gameOverScore.Children.Clear();
+
+            foreach (string score in SingleHttpClientInstance.GetScore())
+            {
+                Debug.WriteLine(score);
+                TextBlock t = new TextBlock()
+                {
+                    FontSize = 25,
+                    Margin = new Thickness(5),
+                    Text = $"{score} Points"
+                };
+                gameOverScore.Children.Add(t);
+            }
+
+            gameOverPanel.Visibility = Visibility.Visible;
             gameOverText.Visibility = Visibility.Visible;
+
 
             playing = false;
             isGameOver = true;

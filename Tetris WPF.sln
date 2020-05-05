@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1062
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris", "Tetris_WPF\Tetris.csproj", "{20686647-1CCB-4EF2-B506-FFCCB40A9227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetrisAPI", "TetrisAPI\TetrisAPI.csproj", "{F5D9B84C-E45E-4CB7-A228-7304B697C00E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{20686647-1CCB-4EF2-B506-FFCCB40A9227}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20686647-1CCB-4EF2-B506-FFCCB40A9227}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20686647-1CCB-4EF2-B506-FFCCB40A9227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D9B84C-E45E-4CB7-A228-7304B697C00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5D9B84C-E45E-4CB7-A228-7304B697C00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5D9B84C-E45E-4CB7-A228-7304B697C00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5D9B84C-E45E-4CB7-A228-7304B697C00E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

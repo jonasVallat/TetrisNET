@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\jonas.vallat\source\repos\WpfApp1\Tetris_WPF\obj\Debug\
+C:\DEV\TetrisNET\Tetris_WPF\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\jonas.vallat\source\repos\WpfApp1\Tetris_WPF\App.xaml
-11151548125
+C:\DEV\TetrisNET\Tetris_WPF\App.xaml
+3-630875497
 
-9909335954
-131569487696
-MainWindow.xaml;
+9-42600687
+16-2119261073
+Login.xaml;MainWindow.xaml;Register.xaml;
 
 True
 
